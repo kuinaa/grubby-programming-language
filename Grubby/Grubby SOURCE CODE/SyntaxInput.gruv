@@ -1,0 +1,31 @@
+real operand1, operand2, total;
+str operator;
+output("add,minus,times,divide,mod");
+output("enter operation: ");
+input(operator);
+
+output("number 1: ");
+input(operand1);
+output("number 2: ");
+input(operand2);
+
+if (operator=="add") {
+	total = num1+num2;
+}
+elsif (operator=="minus") {
+	total = operand1-operand2;
+}
+elsif (operator=="times") {
+	total = operand1*operand2;
+}
+elsif (operator=="divide") {
+	total = operand1/operand2;
+}
+elseif (operator=="mod") {
+	total = operand1%operand22;
+}
+else {
+	output("INVALID OPERATION!");
+}
+output("The total is: "+total);
+
